@@ -1,6 +1,6 @@
 var days= ['Sun', 'Mon', 'Tues', 'Wednes', 'Thurs', 'Fri', 'Satur'];
 var months = ['January', 'February', 'March', 'April', 'May', 'June','July', 'August', 'September', 'October', 'November', 'December'];
-const apikey='e6017ae1ece368f466e3744bef784516';
+const apikey=window.env.API_KEY;
     var now=new Date();
     var month=months[now.getMonth()].slice(0,3).toUpperCase();
     var day=days[now.getDay()].slice(0,3).toUpperCase();
