@@ -1,0 +1,22 @@
+{
+  "name": "weathernow",
+  "version": "1.0.0",
+  "description": "Creating an app which tells the AQI of a place",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aswinisamantray/WeatherNow.git"
+  },
+  "author": "Aswini Samantray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aswinisamantray/WeatherNow/issues"
+  },
+  "homepage": "https://github.com/aswinisamantray/WeatherNow#readme",
+  "dependencies": {
+    "requests": "^0.3.0"
+  }
+}
