@@ -66,7 +66,7 @@ const apikey=window.env.API_KEY;
     searchButton.addEventListener('click',()=>{
         Cities=inputElement.value;
         console.log(Cities);
-            fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${Cities},IN&appid=${apikey}`)
+            fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${Cities},IN&appid=${apikey}`)
             .then((res)=>res.json())
             .then((data) => {
               const location = data[0].name + ', ' + data[0].country;
@@ -75,7 +75,7 @@ const apikey=window.env.API_KEY;
               locationElement.textContent = location;
               lat=data[0].lat;
               lon=data[0].lon;
-              fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apikey}`)
+              fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apikey}`)
               .then((res)=>res.json())
               .then((data)=>{
                 const AIQ=document.getElementById('aiq');
