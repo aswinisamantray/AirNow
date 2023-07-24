@@ -10,15 +10,19 @@
 <body>
     <div id="container" class="box">
         <h1 id="title">AIR QUALITY INDEX</h1>
+        <div class="City">
+        <input type="search" name="search" id="cities" placeholder="Get the AQI for any city..">
+        <button id="search">Search</button>
+      </div>
             <img id="weathercondn" src="" alt="air-quality">
         <div class="info">
-            <img id="icon" src="images/location.png" alt="location">
+            <img id="icon" src="images/location.webp" alt="location">
             <h2 id="location" style="font-size:smaller;"></h2>
             <!--IN  -->
-            <h2 id="aiq"></h2>
+            <h1 id="aiq"></h1>
             <p id="date"></p>
         </div>
-        <div class="dropdown">
+        <div class="dropdown gas" style="position: absolute;">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               GAS
             </button>
